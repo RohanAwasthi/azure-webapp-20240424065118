@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "default-application-name"
+  labels:
+    system: web-apps
+  links:
+    - url: https://github.com/RohanAwasthi/azure-webapp-20240424065118
+      title: "default-application-name"
+      icon: code
+  tags:
+    - java
+    - azure
+    - applicationtype-webapplication
+  annotations:
+    jenkins.io/github-folder: 'apache-azure-app/default-application-name'
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug:  RohanAwasthi/azure-webapp-20240424065118
+    backstage.io/linguist: https://github.com/RohanAwasthi/azure-webapp-20240424065118
+    azure.com/tag-selector: pid/p44
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/ey
